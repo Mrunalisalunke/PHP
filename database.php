@@ -1,5 +1,5 @@
 <?php
-   // create a database connection using MySQLi
+   //database connection using MySQLi
    $servername = "localhost";
    $username = "root";
    $password = "";
@@ -7,7 +7,7 @@
 
    $connection = new mysqli($servername, $username, $password, $dbname);
 
-   // check the connection
+  
    if ($connection->connect_error) {
        die("Database connection failed: " . $connection->connect_errno . " - " . $connection->connect_error);
    }
